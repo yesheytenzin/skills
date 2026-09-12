@@ -1,10 +1,11 @@
 # skills
 
-My personal collection of agent skills for Pi / Claude Code / Codex / Cursor agents, organized in three groups:
+My personal collection of agent skills and extensions, organized in four groups:
 
 - **`pstack/`** — poteto's engineering workflows
 - **`matt-pocock/`** — Matt Pocock's idea-to-ship system
 - **`others/`** — personal & custom skills
+- **`extensions/`** — Pi coding-agent extensions
 
 ## Install
 
@@ -134,3 +135,11 @@ Personal and custom skills: Omarchy maintenance, Rails conventions, exercise sca
 
 - `pstack/tdd` and `pstack/teach` are customized versions that differ from the originals in `~/pstack-pi/skills/` (pstack's `tdd` is bug-fix/regression focused; this one is the red-green loop reference. Same for `teach`).
 - `matt-pocock/principle-attack-the-premise` and `matt-pocock/principle-test-behavior-not-implementation` are additions to the principle family that pair with the Matt Pocock flow (`grilling`, `tdd`).
+## extensions (2)
+
+Pi coding-agent extensions (live in `~/.pi/agent/extensions/`):
+
+| Extension | Description |
+|---|---|
+| `destructive-guard.ts` | Confirm-before-run guard for footguns: `rm -rf`, pacman cache wipes, `rails db:drop`, `dd`/`mkfs` on devices, git force-push, etc. |
+| `omarchy-system-theme.ts` | Applies the custom `omarchy-system` pi theme on startup so it sticks as default. |
